@@ -1,0 +1,260 @@
+html, body {
+    margin:0px;
+    padding:0px;
+    height:100%;
+    position:relative;
+    z-index:0;
+}
+
+.page {
+    width:100%;
+    margin:auto;
+    margin-bottom:200px;
+}
+
+header {
+    width:100%;
+    margin:auto;
+    background-color:#ffffff;
+    align:center;
+    position:absolute;
+    top:0;
+    z-index:9;
+}
+
+.name {
+    display:inline-block;
+    background-color:#4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color:#ffffff;
+    padding:10px 15px;
+    width:auto;
+    /* float:left; */
+    margin:0px;
+}
+
+.container {
+    width:100%;
+    padding:0px;
+}
+
+.navbar-nav {
+    flex-direction:row;
+}
+
+@media (min-width: 768px) {
+.container {
+    max-width: 100%;
+}
+}
+
+@media only screen and (min-width: 576px) {
+.container {
+    max-width: 100%;
+}
+}
+
+@media only screen and (max-width: 640px) {
+    .navbar-brand, .name, .navbar-nav {
+        width:100%;
+        text-align:center;
+    }
+    .name {
+        text-align:center;
+    }
+
+    .navbar-nav {
+        margin-left:0px;
+        margin:auto;
+    }
+}
+
+.background {
+    border-top-style:solid;
+    border-width:1px;
+    border-top-color:#cccccc;
+    background-image: url("../images/bananas.png");
+    margin:0px;
+    height:100%;
+    position:relative;
+    z-index:-1;
+}
+
+.navbar {
+    padding:0px;
+    text-align:center;
+}
+
+.nav {
+    float:right;
+    position:relative;
+    
+}
+
+.nav-link {
+    margin:0px 10px;
+}
+
+#index,
+#portfolio {
+    width: 1px;
+    content: "";
+    min-height: 70px;
+    position:relative;
+    right:20px;
+    border-right-style:solid;
+    padding:0px 20px;
+    border-width:1px; 
+}
+
+header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.headerDivider {
+    border-left:1px solid #38546d; 
+    border-right:1px solid #16222c; 
+    height:80px;
+}
+
+.contentHeading {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color:#4aaaa5;
+}
+
+section {
+    background:#ffffff;
+    color:#777777;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    border-style:solid;
+    border-width:1px;
+    border-color:#dddddd;
+    padding:10px 30px;
+    margin:50px 0px;
+    line-height:1.6;
+}
+
+#prof {
+    float:left;
+    margin:10px 15px 10px 0px;
+}
+.p {
+    float:left;
+}
+
+a {
+    color:#777777;
+}
+
+a:hover {
+    color:#4aaaaf;
+}
+
+.portfolioItem {
+    margin: 15px 20px 15px 90px;
+    width: 261px;
+    height: 174px;
+    float: left;
+    background: url(../images/iphone.jpg);
+    background-size: 261px 174px;
+    position: relative;
+  }
+
+h3 {
+    position:absolute;
+    top:100px;
+    padding:0px;
+    width:100%;
+    background:#4aaaaf;
+    color:#ffffff;
+    text-align:center;
+}
+
+/* .portfolioItem {
+    margin:20px;
+    text-align:center;
+    position:relative;
+} */
+
+.portfolioImage,
+.banner {
+    width:50%;
+    height:50%;
+}
+
+.portfolioImage {
+    float:left;
+    position:relative;
+    z-index:5;
+}
+
+.banner {
+    background-color:#4aaaa5;
+    color:#ffffff;
+    position:relative;
+    float:left;
+}
+
+.column {
+    float:left;
+    width:50%;
+}
+
+.portfolio::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+input[type=text] {
+    width:100%;
+    padding:5px 10px;
+}
+
+.button {
+    background-color:#4aaaaf;
+    color:#ffffff;
+    height:30px;
+    width:80px;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-align:center;
+    font-size:12px;
+}
+
+#message {
+    height:100px;
+    width:100%;
+    padding:5px 10px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #dddddd;
+    margin: 1em 0;
+    padding: 0;
+    color:#dddddd;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:75px;
+    background:#666666;
+    color:#dddddd;
+    text-align:center;
+    font-size:12px;
+    border-top-style:solid;
+    border-width:10px;
+    border-color:#4aaaa5;
+    margin:0px;
+}
+
+#footerText {
+    position:relative;
+    top:30px;
+}
