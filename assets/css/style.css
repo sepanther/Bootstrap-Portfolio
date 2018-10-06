@@ -42,33 +42,6 @@ header {
     flex-direction:row;
 }
 
-@media (min-width: 768px) {
-.container {
-    max-width: 100%;
-}
-}
-
-@media only screen and (min-width: 576px) {
-.container {
-    max-width: 100%;
-}
-}
-
-@media only screen and (max-width: 640px) {
-    .navbar-brand, .name, .navbar-nav {
-        width:100%;
-        text-align:center;
-    }
-    .name {
-        text-align:center;
-    }
-
-    .navbar-nav {
-        margin-left:0px;
-        margin:auto;
-    }
-}
-
 .background {
     border-top-style:solid;
     border-width:1px;
@@ -257,4 +230,47 @@ footer {
 #footerText {
     position:relative;
     top:30px;
+}
+
+@media only screen and (max-width: 980px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .page {
+        margin: 0px 20px 150px 20px;
+        float:left;
+        width:600px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .navbar-brand, .name, .navbar-nav {
+            width:100%;
+            text-align:center;
+            position:static;
+    }
+    
+    .name {
+        text-align:center;
+    }
+    
+    .navbar-nav {
+        margin-left:0px;
+        margin:auto;
+    }    
+
+    .page {
+        width:90%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .page {
+        width:90%;
+    }
 }
